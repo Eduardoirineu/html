@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+/*Estilo do body*/
+body{
+ font-family: Arial, Helvetica, sans-serif;
+ margin: 0;   
+}
+
+.anotacao{
+background-color: rgb(213, 96, 231); 
+padding: 5px;  
+text-align: center;
+}
+
+.cabecalho{
+padding: 60px;  
+text-align: center;
+background-image: url(../imagem/1500.png);
+background-size: cover;
+color: aliceblue;
+
+}
+/*Estilo da barra de navegação*/
+.barra_nav {
+    display: flex;
+    background-color: rgb(231, 185, 93);
+}
+/*Estilo dos links da barra de navegação*/
+.barra_nav a {
+color: #fdfcfc;
+padding: 14px 10px;
+text-decoration: none;
+text-align: center;
+
+}
+/*trocar a cor de fundo quando o cursor estiver sobre o link*/
+.barra_nav a:hover {
+    background-color: rgb(238, 140, 12);
+    color: bisque;
+}
+
+/*configurar a div coluna */
+.coluna {
+ display: flex;
+ flex-wrap: wrap;
+
+}
+/*Criar 2 colunas desiguais (30 e 70% */
+.lateral {
+    flex: 30%;
+    background-color: #d6d3d3;
+    padding: 20px;
+}
+
+.principal {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/*imagens falsas apenas para marcação de espaço*/
+.imagem_falsa {
+    background-color: rgb(223, 142, 246);
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+}
+
+.imagem_falsa2 {
+    background-color: rgb(223, 142, 246);
+    width: 100%;
+    padding: 20px;
+    height: 60px;
+    margin-bottom: 5px;
+   }
+
+   .imagem_falsa3 {
+    background-color: rgb(223, 142, 246);
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+   }
+  .rodape{
+    max-height: fit-content;
+    padding: 20px;
+    text-align: center;
+    background-color: #d3932d;
+  }
+
+   @media screen and (max-width: 500px) {
+    .coluna, .barra_nav {
+        flex-direction: column;
+    }
+    .cabecalho{
+        background-image: url(/imagem/siteresponsivo420.png);
+        background-size: cover;
+        color: #fdfcfc;
+    }
+    
+   }
